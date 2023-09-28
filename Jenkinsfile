@@ -10,8 +10,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Checkout your source code from your version control system (e.g., Git)
-                git 'https://github.com/AshutoshKumar99/Jenkins_Deploy_War_to_Tomcat.git'
+                // Checkout your source code from your version control system (e.g., Git) into a workspace
+                checkout scm
             }
         }
         
